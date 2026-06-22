@@ -1,3 +1,16 @@
-// Android module descriptor for opening the app in Android Studio.
-// Root build.gradle runs JVM unit tests for the platform-independent generator logic.
-plugins { id 'com.android.application' version '8.7.3' apply false }
+plugins {
+    id 'com.android.application' version '8.7.3'
+}
+
+android {
+    namespace 'com.example.generatorchisel'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.example.generatorchisel'
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '1.0'
+    }
+}
